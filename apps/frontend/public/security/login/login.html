@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/apps/frontend/public/security/login/login.css">
+    <title>Acceder</title>
+</head>
+<body>
+    <nav id="navbar">
+        <img id="main-logo" src="/docs/imgs/main_logo.png" alt="Logo">
+        <div id="user-state">
+            <ul id="if-login" style="display: none;">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </ul>
+         
+            <ul id="if-logout">
+                <a href="/apps/frontend/public/home/main/index.html">Inicio</a>
+            </ul>
+        </div>
+    </nav>
+    <div class="form-container">
+        <form id="main-form-login" action="/apps/frontend/src/controllers/loginController.js" method="POST">
+            <h2>Iniciar Sesión</h2>
+            <div class="login-contents">
+                <div class="form-inputs">
+                    <label for="username">Usuario:</label>
+                    <input type="text" id="username" name="username" placeholder="Usuario" required>
+                </div>
+                <div class="form-inputs">
+                    <label for="password">Contraseña:</label>
+                    <input type="password" id="password" name="password" placeholder="Contraseña" required>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <a href="#" type="submit">Iniciar Sesión</a>
+                <a type="button">Recuperar Contraseña</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

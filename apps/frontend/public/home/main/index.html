@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/apps/frontend/src/models/navbar.js" type="module"></script>
+    <link rel="stylesheet" href="/apps/frontend/public/home/main/index.css">
+    <script src="/apps/frontend/src/js/carrusel.js" defer></script>
+    <title>Institut</title>
+</head>
+<body>
+    <nav id="navbar">
+        <img id="main-logo" src="/docs/imgs/main_logo.png" alt="Logo">
+        <div id="user-state">
+            <ul id="if-login" style="display: none;">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/contact">Contact</a>
+            </ul>
+         
+            <ul id="if-logout">
+                <a href="/apps/frontend/public/security/login/login.html">Login</a>
+            </ul>
+        </div>
+    </nav>
+    
+    <main id="main-content">
+        <div class="carrusel">
+            <button class="carrusel-btn prev-btn">&lt;</button>
+            <div class="carrusel-container">
+                <img class="img-carrusel" src="/docs/imgs/carrusel1.jpeg" alt="Carrusel Image 1">
+                <img class="img-carrusel" src="/docs/imgs/carrusel2.jpeg" alt="Carrusel Image 2">
+                <img class="img-carrusel" src="/docs/imgs/carrusel3.jpeg" alt="Carrusel Image 3">
+            </div>
+            <button class="carrusel-btn next-btn">&gt;</button>
+            <div class="carrusel-dots"></div>
+        </div>
+        <div class="container-institutodetalles">
+            <div class="instituto-detalles">
+                <h2>Bienvenido al instituto numero 15</h2>
+                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi eaque omnis totam consectetur magnam ipsum adipisci mollitia iste ab, rerum distinctio, officia recusandae. Impedit ipsam dolore nisi praesentium, quis maiores.</p>
+                <p> En este lugar nos centramos en lograr que nuestros estudiantes puedan llegar a ser <strong>los mejores en su campo</strong>.</p>
+                Para eso tenemos una gran variedad de <strong>carreras</strong> y <strong>cursos</strong> que pueden ser de su interes.
+                <p>Contamos con un gran equipo de profesionales que estan dispuestos a ayudarles en todo lo que necesiten.</p>
+                <p>Ademas de eso, contamos con una gran variedad de <strong>actividades extracurriculares</strong> que pueden ser de su interes.</p>
+                <p>No dude en contactarnos si tiene alguna duda o consulta.</p>
+            </div>
+            <div style="display: none;" class="action-buttons">
+                <button class="action-btn">Learn More</button>
+                <button class="action-btn">Contact Us</button>
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <p>&copy; 2025 Web Site n15</p>
+    </footer>
+</body>
+</html>

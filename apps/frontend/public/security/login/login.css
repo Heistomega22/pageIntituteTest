@@ -1,0 +1,142 @@
+:root {
+    --background-color-navbar: #2C2C2C;
+    --text-color-navbar: #FFFFFF;
+    --hover-color-navbar: #FFD700;
+
+    --background-color-footer: #2C2C2C;
+    --text-color-footer: #FFFFFF;
+    --text-links-footer: #FFD700;
+
+    --buttons-background: #4A4A4A;
+    --buttons-text: #FFFFFF;
+    --buttons-border: #FFD700;
+    --buttons-hover-color: #FFD700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #f2f2f2;
+}
+
+/* navbar */
+#navbar {
+    background-color: var(--background-color-navbar);
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-height: 110px;
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#main-logo {
+    max-height: 100px;
+    max-width: 100%;
+}
+
+/* Form login*/
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    max-width: 100%;
+}
+
+#main-form-login {
+    font-size: large;
+    display: flex;
+    background-color: var(--buttons-background);
+    color: var(--buttons-text);
+    border: 1px solid var(--buttons-border);
+    border-radius: 12px;
+    padding: 40px;
+    max-width: 44%;
+    width: 100%;
+    height: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+/* Footer */
+#main-footer {
+    background-color: var(--background-color-navbar);
+    color: var(--text-color-navbar);
+    text-align: center;
+    padding: 10px 20px;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+
+
+
+/* Estilos generales */
+
+a {
+    color: var(--text-color-navbar);
+    text-decoration: none;
+    font-weight: bold;
+    background-color: var(--buttons-background);
+    border: 1px solid var(--buttons-border);
+    border-radius: 12px;
+    padding: 8px 12px;
+}
+
+a:hover {
+    color: var(--text-color-navbar);
+    background-color: var(--buttons-hover-color);
+}
+
+
+
+.form-inputs {
+    font: bold 14px Arial, sans-serif;
+    font-size: 500;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    gap: 75px;
+}
+
+.form-buttons {
+    width: 55%;
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+
+}
+
+.form-inputs label {
+    flex: 1;
+    text-align: right;
+}
+
+input {
+    width: 35%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid var(--buttons-border);
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 250px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 1.5rem;
+}
