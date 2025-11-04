@@ -1,29 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="/apps/frontend/src/models/navbar.js" type="module"></script>
-    <link rel="stylesheet" href="/apps/frontend/public/home/main/index.css">
-    <script src="/apps/frontend/src/js/carrusel.js" defer></script>
-    <title>Institut</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="/apps/frontend/public/home/main/index.css">
+  <script src="/database/connection/dbcfb.js" type="module"></script>
+    <script src="/apps/frontend/src/js/main.js" type="module" defer></script>
+
+  <script src="/apps/frontend/src/js/carrusel.js" defer></script>
+  <script src="/apps/frontend/src/services/userService.js" type="module" defer></script>
+  <script src="/apps/frontend/src/controllers/sessionController.js" type="module" defer></script>
+  <script src="/apps/frontend/src/js/sidebar.js" type="module" defer></script>
+  <title>Institut</title>
 </head>
 <body>
-    <nav id="navbar">
-        <img id="main-logo" src="/docs/imgs/main_logo.png" alt="Logo">
-        <div id="user-state">
-            <ul id="if-login" style="display: none;">
-                <a href="/">Home</a>
-                <a href="/about">About</a>
-                <a href="/contact">Contact</a>
-            </ul>
-         
-            <ul id="if-logout">
-                <a href="/apps/frontend/public/security/login/login.html">Login</a>
-            </ul>
+  <nav id="navbar">
+    <a href="/apps/frontend/public/home/main/index.html"><img id="main-logo" src="/docs/imgs/main_logo.png" alt="Logo"></a>
+    <h1 class="mainTitle">Instituto 15</h1>
+    <div id="main-links">
+      <ul>
+        <li><a href="/apps/frontend/public/home/main/index.html">Inicio</a></li>
+        <li><a href="#main-footer">Contacto</a></li>
+        <li id="cursosLinkContainer" style="display:none;"><a href="/apps/frontend/public/home/alumnos/cursos/miscursos.html">Cursos</a></li>
+      </ul>
+    </div>
+    <div id="user-state">
+        <button type="button" id="sidebar-toggle-btn">&#9776;</button>
+        <button type="button" id="close-sidebar-toggle-btn">&times;</button>
+
+        <div id="sidebar" class="sidebar">
+          <ul id="if-login">
+            <li><p id="username">#</p></li>
+            <li><a href="/apps/frontend/public/home/alumnos/perfil/miprofile.html" id="profileLink">Mi Perfil</a></li>
+            <li><a id="logoutBtn" href="#logout">Logout</a></li>
+          </ul>
+          <ul id="if-logout">
+            <li><a href="/apps/frontend/public/security/login/login.html">Login</a></li>
+            <li><a href="/apps/frontend/public/security/register/register.html">Register</a></li>
+          </ul>
         </div>
-    </nav>
-    
+    </div>
+  </nav>
     <main id="main-content">
         <div class="carrusel">
             <button class="carrusel-btn prev-btn">&lt;</button>
@@ -35,15 +52,16 @@
             <button class="carrusel-btn next-btn">&gt;</button>
             <div class="carrusel-dots"></div>
         </div>
-        <div class="container-institutodetalles">
-            <div class="instituto-detalles">
-                <h2>Bienvenido al instituto numero 15</h2>
-                <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Excepturi eaque omnis totam consectetur magnam ipsum adipisci mollitia iste ab, rerum distinctio, officia recusandae. Impedit ipsam dolore nisi praesentium, quis maiores.</p>
-                <p> En este lugar nos centramos en lograr que nuestros estudiantes puedan llegar a ser <strong>los mejores en su campo</strong>.</p>
-                Para eso tenemos una gran variedad de <strong>carreras</strong> y <strong>cursos</strong> que pueden ser de su interes.
-                <p>Contamos con un gran equipo de profesionales que estan dispuestos a ayudarles en todo lo que necesiten.</p>
-                <p>Ademas de eso, contamos con una gran variedad de <strong>actividades extracurriculares</strong> que pueden ser de su interes.</p>
-                <p>No dude en contactarnos si tiene alguna duda o consulta.</p>
+        <div id="container-institutodetalles">
+            <div id="instituto-detalles">
+                <h2>Instituto de Formación Técnica Superior N°15</h2>
+                <p>En el IFTS N°15 nos dedicamos a formar profesionales creativos en el mundo audiovisual. Entendemos que cada estudiante tiene un sueño, una historia que contar, una visión única que compartir con el mundo.</p>
+                
+                <p>Nuestra misión es proporcionarte las herramientas, el conocimiento y la guía necesaria para hacer realidad ese sueño que llevas dentro. Ya sea que te apasione la dirección, la producción, o cualquier aspecto del mundo audiovisual, aquí encontrarás el espacio para desarrollar tu potencial.</p>
+                
+                <p>No solo formamos técnicos, formamos narradores de historias, creadores de contenido y artistas audiovisuales. En nuestras aulas, tu creatividad se encuentra con la técnica, y tus ideas cobran vida en la pantalla.</p>
+                
+                <p>Si tienes una historia que contar, si sueñas con crear contenido que impacte, si te apasiona el mundo audiovisual, este es tu lugar. Únete a nuestra comunidad de creadores y comienza tu viaje hacia la realización de tus sueños.</p>
             </div>
             <div style="display: none;" class="action-buttons">
                 <button class="action-btn">Learn More</button>
@@ -52,7 +70,28 @@
         </div>
     </main>
     <footer id="main-footer">
-        <p>&copy; 2025 Web Site n15</p>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><strong>Dirección:</strong> Loyola 1500, 1414</li>
+                    <li><strong>Barrio:</strong> Villa Crespo</li>
+                    <li><strong>Teléfono:</strong> <a href="https://wa.me/01138981600">011 3898-1600</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:infoifts15@gmail.com">infoifts15@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <div>
+                    <p>&copy; 2025 Instituto de Formación Técnica Superior N°15</p>
+                    <p>Formando profesionales audiovisuales</p>
+                </div>
+                <div id="redesSociales">
+                    <a href="https://www.facebook.com/15ifts" target="_blank"><img src="/docs/svg/black_teme/facebook-app-symbol.png" alt="Facebook" class="social-icon"></a>
+                    <a href="https://www.instagram.com/iftsn15" target="_blank"><img src="/docs/svg/black_teme/instagram.png" alt="Instagram" class="social-icon"></a>
+                    <a href="https://www.youtube.com/@iftsn15" target="_blank"><img src="/docs/svg/white_teme/youtube.png" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

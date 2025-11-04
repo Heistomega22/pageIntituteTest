@@ -3,11 +3,14 @@
   "version": "1.0.0",
   "description": "Sistema web desarrollado para la gestion de alumnos, profesores y cursos del instituto ifts15.",
   "main": "index.js",
+  "type": "module",
   "directories": {
     "doc": "docs",
     "test": "tests"
   },
   "scripts": {
+    "start": "node apps/frontend/src/services/server.js",
+    "dev": "nodemon apps/frontend/src/services/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,8 +20,13 @@
   "keywords": [],
   "author": "angel",
   "license": "ISC",
-  "bugs": {
+  "bugs": { 
     "url": "https://github.com/Angeles-HO/sistema_web_instituto12/issues"
   },
-  "homepage": "https://github.com/Angeles-HO/sistema_web_instituto12#readme"
+  "homepage": "https://github.com/Angeles-HO/sistema_web_instituto12#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "firebase": "^12.4.0"
+  }
 }

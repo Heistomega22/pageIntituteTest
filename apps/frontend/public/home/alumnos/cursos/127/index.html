@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comunicación y producción</title>
+    <link rel="stylesheet" href="/apps/frontend/public/home/main/index.css">
+    <link rel="stylesheet" href="/apps/frontend/public/home/alumnos/cursos/cursosMain.css">
+    <script src="/apps/frontend/src/js/sidebar.js" type="module" defer></script>
+    <script src="/apps/frontend/src/ui/genContenedor.js" type="module" defer></script>
+
+</head>
+<body>
+    <nav id="navbar">
+        <a href="/apps/frontend/public/home/main/index.html"><img id="main-logo" src="/docs/imgs/main_logo.png" alt="Logo"></a>
+        <h1 class="mainTitle">Instituto 15</h1>
+        <div id="main-links">
+            <ul>
+                <li><a href="/apps/frontend/public/home/main/index.html">Inicio</a></li>
+                <li><a href="#main-footer">Contacto</a></li>
+                <li><a href="/apps/frontend/public/home/alumnos/cursos/miscursos.html" id="cursosLink">Cursos</a></li>
+            </ul>
+        </div>
+        <div id="user-state">
+            <button type="button" id="sidebar-toggle-btn">&#9776;</button>
+            <button type="button" id="close-sidebar-toggle-btn">&times;</button>
+            <div id="sidebar" class="sidebar">
+                <ul id="if-login">
+                    <li><p id="username">#</p></li>
+                    <li><a href="/apps/frontend/public/home/alumnos/perfil/miprofile.html" id="profileLink">Mi Perfil</a></li>
+                    <li><a id="logoutBtn" href="#logout">Logout</a></li>
+                </ul>
+                <ul id="if-logout">
+                    <li><a href="/apps/frontend/public/security/login/login.html">Login</a></li>
+                    <li><a href="/apps/frontend/public/security/register/register.html">Register</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main id="main-content-cursos"> <!-- body principal del curso -->
+        <div id="contenedorAllActividades"> <!-- contenedor de todas las actividades del curso, donde se almacenan los dropdowns creados -->
+            <div id="panelActividadesIndiv"> <!-- panel de actividades individuales donde se inyecta cada div de actividad, mediante un forEach -->
+
+            </div>
+        </div>
+    </main>
+    <footer id="main-footer">
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contacto</h3>
+                <ul>
+                    <li><strong>Dirección:</strong> Loyola 1500, 1414</li>
+                    <li><strong>Barrio:</strong> Villa Crespo</li>
+                    <li><strong>Teléfono:</strong> <a href="https://wa.me/01138981600">011 3898-1600</a></li>
+                    <li><strong>Email:</strong> <a href="mailto:infoifts15@gmail.com">infoifts15@gmail.com</a></li>
+                </ul>
+            </div>
+            <div class="copyright">
+                <div>
+                    <p>&copy; 2025 Instituto de Formación Técnica Superior N°15</p>
+                    <p>Formando profesionales audiovisuales</p>
+                </div>
+                <div id="redesSociales">
+                    <a href="https://www.facebook.com/15ifts" target="_blank"><img src="/docs/svg/black_teme/facebook-app-symbol.png" alt="Facebook" class="social-icon"></a>
+                    <a href="https://www.instagram.com/iftsn15" target="_blank"><img src="/docs/svg/black_teme/instagram.png" alt="Instagram" class="social-icon"></a>
+                    <a href="https://www.youtube.com/@iftsn15" target="_blank"><img src="/docs/svg/white_teme/youtube.png" alt="YouTube" class="social-icon"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

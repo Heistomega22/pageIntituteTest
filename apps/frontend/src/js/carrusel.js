@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function nextSlide() {
-        currentIndex = (currentIndex + 1) % images.length;
+        currentIndex = (currentIndex + 1) % images.length; 
         goToSlide(currentIndex);
     }
 
@@ -41,6 +41,6 @@ document.addEventListener('DOMContentLoaded', () => {
     prevBtn.addEventListener('click', prevSlide);
     nextBtn.addEventListener('click', nextSlide);
 
-    // Auto advance slides every 5 seconds
+    // 5s
     setInterval(nextSlide, 5000);
 });

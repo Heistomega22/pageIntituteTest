@@ -1,0 +1,136 @@
+:root {
+    --background-color-navbar: #2C2C2C;
+    --text-color-navbar: #FFFFFF;
+    --hover-color-navbar: #FFD700;
+
+    --background-color-footer: #2C2C2C;
+    --text-color-footer: #FFFFFF;
+
+    --buttons-background: #4A4A4A;
+    --buttons-text: #FFFFFF;
+    --buttons-border: #FFD700;
+    --buttons-hover-color: #FFD700;
+
+    --form-background: #FFFFFF;
+    --form-text: #000000;
+    --form-border: #CCCCCC;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+#navbar {
+    background-color: var(--background-color-navbar);
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#main-logo {
+    max-height: 80px;
+}
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 20px;
+}
+
+#main-form-register {
+    display: grid;
+    background-color: #3e3e3b;
+    color: var(--buttons-text);
+    border: 1px solid var(--form-border);
+    border-radius: 12px;
+    padding: 36px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    grid-template-columns: 1fr;
+    gap: 5px;
+
+
+}
+
+#main-form-register h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+}
+
+.form-inputs label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-inputs input {
+    padding: 10px;
+    border: 1px solid var(--form-border);
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.form-buttons {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.form-buttons button {
+    background-color: var(--buttons-background);
+    color: var(--buttons-text);
+    border: 1px solid var(--buttons-border);
+    border-radius: 12px;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.form-buttons button:hover {
+    background-color: var(--buttons-hover-color);
+    color: var(--text-color-navbar);
+}
+
+.form-links {
+    text-align: center;
+    margin-top: 15px;
+}
+
+.form-links a {
+    color: var(--buttons-hover-color);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.form-links a:hover {
+    text-decoration: underline;
+}
+
+#main-footer {
+    background-color: var(--background-color-footer);
+    color: var(--text-color-footer);
+    text-align: center;
+    padding: 10px 20px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}

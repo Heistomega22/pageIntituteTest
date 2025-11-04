@@ -1,0 +1,170 @@
+{
+  "cursos_index": {
+    "127": {
+      "campo": "General",
+      "createdAt": 1761142200000,
+      "cursoId": "127",
+      "horas": 96,
+      "imagen": "/docs/imgs/127.png",
+      "nombre": "Comunicación y producción audiovisual",
+      "tipo": "Materia",
+      "updatedAt": 1761142200000
+    },
+    "128": {
+      "campo": "General",
+      "cursoId": "128",
+      "horas": 48,
+      "imagen": "/docs/imgs/128.png",
+      "nombre": "Historia social argentina contemporánea",
+      "tipo": "Materia"
+    },
+    "129": {
+      "campo": "Fundamento",
+      "cursoId": "129",
+      "horas": 96,
+      "imagen": "/docs/imgs/129.png",
+      "nombre": "Lenguajes y técnicas artísticas contemporáneas",
+      "tipo": "Materia"
+    },
+    "130": {
+      "campo": "Específica",
+      "cursoId": "130",
+      "horas": 96,
+      "nombre": "Producción de proyectos audiovisuales",
+      "tipo": "Taller"
+    },
+    "131": {
+      "campo": "Fundamento",
+      "cursoId": "131",
+      "horas": 96,
+      "nombre": "Principios de la comunicación social y análisis de los medios",
+      "tipo": "Materia"
+    },
+    "132": {
+      "campo": "Fundamento",
+      "cursoId": "132",
+      "horas": 64,
+      "nombre": "Inglés técnico",
+      "tipo": "Materia"
+    },
+    "133": {
+      "campo": "Específica",
+      "cursoId": "133",
+      "horas": 64,
+      "nombre": "Técnicas de realización audiovisual",
+      "tipo": "Taller"
+    },
+    "134": {
+      "campo": "Específica",
+      "cursoId": "134",
+      "horas": 64,
+      "nombre": "Narrativas audiovisuales tradicionales de ficción",
+      "tipo": "Taller"
+    },
+    "135": {
+      "campo": "Específica",
+      "cursoId": "135",
+      "horas": 64,
+      "nombre": "Nuevas narrativas audiovisuales de no ficción",
+      "tipo": "Taller"
+    },
+    "136": {
+      "campo": "Fundamento",
+      "cursoId": "136",
+      "horas": 48,
+      "nombre": "Historia del arte audiovisual argentino",
+      "tipo": "Materia"
+    },
+    "137": {
+      "campo": "General",
+      "cursoId": "137",
+      "horas": 48,
+      "nombre": "Culturas y subjetividades",
+      "tipo": "Materia"
+    },
+    "138": {
+      "campo": "Práctica",
+      "cursoId": "138",
+      "horas": 128,
+      "nombre": "Práctica profesionalizante I: Realización de cortometraje",
+      "tipo": "Práctica"
+    }
+  },
+  "sessions": {
+    "EH8KaGXX7hTVbeoFPdJRAIusrqI2": {
+      "09f25f1f-22c3-4cd5-b71a-dd264f64b3c1": {
+        "active": true,
+        "createdAt": 1762270570459,
+        "language": "es-US",
+        "lastActive": 1762270588861,
+        "sessionId": "09f25f1f-22c3-4cd5-b71a-dd264f64b3c1",
+        "uid": "EH8KaGXX7hTVbeoFPdJRAIusrqI2",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36"
+      },
+      "51e136df-1784-41b6-a729-d0626a7953c0": {
+        "active": true,
+        "createdAt": 1762270570421,
+        "language": "es-US",
+        "lastActive": 1762270570625,
+        "sessionId": "51e136df-1784-41b6-a729-d0626a7953c0",
+        "uid": "EH8KaGXX7hTVbeoFPdJRAIusrqI2",
+        "userAgent": "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/142.0.0.0 Mobile Safari/537.36"
+      },
+      "ad429b00-d749-43df-bdbc-057a68708644": {
+        "active": true,
+        "createdAt": 1762265920402,
+        "language": "es-AR",
+        "lastActive": 1762275705048,
+        "sessionId": "ad429b00-d749-43df-bdbc-057a68708644",
+        "uid": "EH8KaGXX7hTVbeoFPdJRAIusrqI2",
+        "userAgent": "Mozilla/5.0 (X11; Linux x86_64; rv:143.0) Gecko/20100101 Firefox/143.0"
+      },
+      "cf0f7adc-2323-469d-836b-a69ca24bace9": {
+        "active": true,
+        "lastActive": 1762277325999
+      }
+    }
+  },
+  "users": {
+    "alumnos": {
+      "EH8KaGXX7hTVbeoFPdJRAIusrqI2": {
+        "apellido": "",
+        "createdAt": 1761611214245,
+        "cursos": {
+          "127": {
+            "cursoId": "127",
+            "inscritoAt": 1761611214804,
+            "progreso": 17
+          },
+          "128": {
+            "cursoId": "128",
+            "inscritoAt": 1761611214805,
+            "progreso": 24
+          },
+          "129": {
+            "cursoId": "129",
+            "inscritoAt": 1761611214806,
+            "progreso": 11
+          }
+        },
+        "dni": "22590762",
+        "email": "admin@gmail.com",
+        "group": "alumnos",
+        "nombre": "admin",
+        "password": "Heistomega1225",
+        "segundoApellido": "",
+        "segundoNombre": ""
+      }
+    }
+  },
+  "users_index": {
+    "EH8KaGXX7hTVbeoFPdJRAIusrqI2": {
+      "activeSession": {
+        "active": true,
+        "linkedAt": 1762270570257,
+        "sessionId": "09f25f1f-22c3-4cd5-b71a-dd264f64b3c1",
+        "uid": "EH8KaGXX7hTVbeoFPdJRAIusrqI2"
+      }
+    }
+  }
+}
