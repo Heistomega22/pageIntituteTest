@@ -87,4 +87,3 @@ Sistema web desarrollado para la gestión de alumnos, profesores y cursos del in
    - Script en [delInactiveSessions.js](/apps/frontend/src/services/delInactiveSessions.js)
 
 
----
