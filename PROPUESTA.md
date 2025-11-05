@@ -13,6 +13,12 @@ Este documento presenta una propuesta para añadir nuevas funcionalidades al sis
 7. **Accesibilidad mejorada**: Asegurar que el sistema web cumpla con las normas de accesibilidad web (WCAG) para garantizar que todos los usuarios, incluyendo aquellos con discapacidades, puedan utilizar la plataforma de manera efectiva.
 8. **Análisis de datos académicos**: Implementar herramientas de análisis de datos para que los administradores y docentes puedan obtener informes detallados sobre el rendimiento académico de los estudiantes y la efectividad de los cursos.
 9.  **Módulo de retroalimentación**: Crear un módulo donde los estudiantes puedan proporcionar retroalimentación sobre los cursos y docentes, ayudando a mejorar la calidad educativa.
+10. **Próximos pasos**
+- Crear la base principal de cursos y su gestión:
+  - Estructura:
+    - materiales (pdfs, videos, imágenes, archivos)
+    - tareas (con fecha de entrega, descripción, archivos adjuntos)
+    - foro de discusión (maqueta simple)
 
 ## Conclusión
 La implementación de estas funcionalidades propuestas contribuirá significativamente a mejorar la experiencia educativa en el sistema web del instituto15, facilitando la gestión académica y promoviendo una mayor interacción entre estudiantes y docentes. Se recomienda llevar a cabo un análisis detallado de cada funcionalidad para evaluar su viabilidad técnica y su impacto en la comunidad educativa, priorizando aquellas que ofrezcan un mayor beneficio a corto plazo y siguiendo el *Cuadrantes de la Matriz de Eisenhower*.
